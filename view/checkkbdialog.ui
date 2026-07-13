@@ -1,0 +1,2003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CheckKBDialog</class>
+ <widget class="QDialog" name="CheckKBDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>727</width>
+    <height>269</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,10">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QPushButton" name="get1Button">
+         <property name="text">
+          <string>校准电压1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="get2Button">
+         <property name="text">
+          <string>校准电压2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="get3Button">
+         <property name="text">
+          <string>验证电压3</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>保存结果</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>保存报表</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="text">
+          <string>待测模块上电</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QGroupBox" name="typeBox">
+         <property name="title">
+          <string>类型</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QRadioButton" name="chargeButton">
+            <property name="text">
+             <string>充电</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="dischargeButton">
+            <property name="text">
+             <string>放电</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="zdButton">
+            <property name="text">
+             <string>组端</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="preChargeButton">
+            <property name="text">
+             <string>预充</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="V5Button">
+            <property name="text">
+             <string>5V输出</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="V12Button">
+            <property name="text">
+             <string>12V输出</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="supplyButton">
+            <property name="text">
+             <string>供电电压</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-434</y>
+          <width>586</width>
+          <height>1486</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>1#实测值1：</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read75Edit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>1#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>1#表测值1：</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="read1Button">
+               <property name="text">
+                <string>读取</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label_56">
+               <property name="text">
+                <string>2#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit2"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_57">
+               <property name="text">
+                <string>2#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit2"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_58">
+               <property name="text">
+                <string>3#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit3"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_59">
+               <property name="text">
+                <string>3#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit3"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_60">
+               <property name="text">
+                <string>4#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit4"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_61">
+               <property name="text">
+                <string>4#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit4"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="label_30">
+               <property name="text">
+                <string>5#实测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read75Edit5"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_62">
+               <property name="text">
+                <string>5#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit5"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_63">
+               <property name="text">
+                <string>5#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit5"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QLabel" name="label_64">
+               <property name="text">
+                <string>6#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit6"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_65">
+               <property name="text">
+                <string>6#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit6"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <widget class="QLabel" name="label_66">
+               <property name="text">
+                <string>7#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit7"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_67">
+               <property name="text">
+                <string>7#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit7"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_14">
+             <item>
+              <widget class="QLabel" name="label_68">
+               <property name="text">
+                <string>8#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit8"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_69">
+               <property name="text">
+                <string>8#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit8"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <widget class="QLabel" name="label_34">
+               <property name="text">
+                <string>9#实测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read75Edit9"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_70">
+               <property name="text">
+                <string>9#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit9"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_71">
+               <property name="text">
+                <string>9#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit9"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_16">
+             <item>
+              <widget class="QLabel" name="label_72">
+               <property name="text">
+                <string>10#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit10"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_73">
+               <property name="text">
+                <string>10#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit10"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <item>
+              <widget class="QLabel" name="label_74">
+               <property name="text">
+                <string>11#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit11"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_75">
+               <property name="text">
+                <string>11#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit11"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_18">
+             <item>
+              <widget class="QLabel" name="label_76">
+               <property name="text">
+                <string>12#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit12"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_77">
+               <property name="text">
+                <string>12#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit12"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_20">
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>13#实测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read75Edit13"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_78">
+               <property name="text">
+                <string>13#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit13"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_79">
+               <property name="text">
+                <string>13#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit13"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_19">
+             <item>
+              <widget class="QLabel" name="label_80">
+               <property name="text">
+                <string>14#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit14"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_81">
+               <property name="text">
+                <string>14#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit14"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_21">
+             <item>
+              <widget class="QLabel" name="label_82">
+               <property name="text">
+                <string>15#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit15"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_83">
+               <property name="text">
+                <string>15#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit15"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_22">
+             <item>
+              <widget class="QLabel" name="label_84">
+               <property name="text">
+                <string>16#计算值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real1Edit16"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_85">
+               <property name="text">
+                <string>16#表测值1：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test75Edit16"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>1#实测值2：</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read0Edit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>1#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>1#表测值2：</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="read2Button">
+               <property name="text">
+                <string>读取</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_23">
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>2#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit2"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_86">
+               <property name="text">
+                <string>2#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit2"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_24">
+             <item>
+              <widget class="QLabel" name="label_87">
+               <property name="text">
+                <string>3#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit3"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_88">
+               <property name="text">
+                <string>3#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit3"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_25">
+             <item>
+              <widget class="QLabel" name="label_89">
+               <property name="text">
+                <string>4#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit4"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_90">
+               <property name="text">
+                <string>4#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit4"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_38">
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>5#实测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read0Edit5"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_91">
+               <property name="text">
+                <string>5#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit5"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_92">
+               <property name="text">
+                <string>5#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit5"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_26">
+             <item>
+              <widget class="QLabel" name="label_93">
+               <property name="text">
+                <string>6#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit6"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_94">
+               <property name="text">
+                <string>6#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit6"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_33">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_39">
+               <item>
+                <widget class="QLabel" name="label_95">
+                 <property name="text">
+                  <string>7#表测值2：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="real2Edit7"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_96">
+                 <property name="text">
+                  <string>7#表测值2：</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="test0Edit7"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_35">
+             <item>
+              <widget class="QLabel" name="label_97">
+               <property name="text">
+                <string>8#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit8"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_98">
+               <property name="text">
+                <string>8#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit8"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_34">
+             <item>
+              <widget class="QLabel" name="label_24">
+               <property name="text">
+                <string>9#实测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read0Edit9"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_99">
+               <property name="text">
+                <string>9#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit9"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_100">
+               <property name="text">
+                <string>9#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit9"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_27">
+             <item>
+              <widget class="QLabel" name="label_101">
+               <property name="text">
+                <string>10#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit10"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_102">
+               <property name="text">
+                <string>10#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit10"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_32">
+             <item>
+              <widget class="QLabel" name="label_103">
+               <property name="text">
+                <string>11#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit11"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_104">
+               <property name="text">
+                <string>11#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit11"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_28">
+             <item>
+              <widget class="QLabel" name="label_105">
+               <property name="text">
+                <string>12#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit12"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_106">
+               <property name="text">
+                <string>12#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit12"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_36">
+             <item>
+              <widget class="QLabel" name="label_37">
+               <property name="text">
+                <string>13#实测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="read0Edit13"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_107">
+               <property name="text">
+                <string>13#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit13"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_108">
+               <property name="text">
+                <string>13#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit13"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_45">
+             <item>
+              <widget class="QLabel" name="label_109">
+               <property name="text">
+                <string>14#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit14"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_110">
+               <property name="text">
+                <string>14#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit14"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_42">
+             <item>
+              <widget class="QLabel" name="label_111">
+               <property name="text">
+                <string>15#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit15"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_112">
+               <property name="text">
+                <string>15#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit15"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_37">
+             <item>
+              <widget class="QLabel" name="label_113">
+               <property name="text">
+                <string>16#计算值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="real2Edit16"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_114">
+               <property name="text">
+                <string>16#表测值2：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="test0Edit16"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>1#新K值：</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>1#新B值：</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_40">
+             <item>
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>2#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit2"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_115">
+               <property name="text">
+                <string>2#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit2"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton2">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton2">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_43">
+             <item>
+              <widget class="QLabel" name="label_42">
+               <property name="text">
+                <string>3#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit3"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_116">
+               <property name="text">
+                <string>3#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit3"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton3">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton3">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_52">
+             <item>
+              <widget class="QLabel" name="label_43">
+               <property name="text">
+                <string>4#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit4"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_117">
+               <property name="text">
+                <string>4#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit4"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton4">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton4">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_49">
+             <item>
+              <widget class="QLabel" name="label_46">
+               <property name="text">
+                <string>5#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit5"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_118">
+               <property name="text">
+                <string>5#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit5"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton5">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton5">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_51">
+             <item>
+              <widget class="QLabel" name="label_47">
+               <property name="text">
+                <string>6#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit6"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_119">
+               <property name="text">
+                <string>6#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit6"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton6">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton6">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_55">
+             <item>
+              <widget class="QLabel" name="label_48">
+               <property name="text">
+                <string>7#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit7"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_120">
+               <property name="text">
+                <string>7#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit7"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton7">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton7">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_50">
+             <item>
+              <widget class="QLabel" name="label_49">
+               <property name="text">
+                <string>8#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit8"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_121">
+               <property name="text">
+                <string>8#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit8"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton8">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton8">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_56">
+             <item>
+              <widget class="QLabel" name="label_50">
+               <property name="text">
+                <string>9#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit9"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_122">
+               <property name="text">
+                <string>9#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit9"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton9">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton9">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_57">
+             <item>
+              <widget class="QLabel" name="label_51">
+               <property name="text">
+                <string>10#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit10"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_123">
+               <property name="text">
+                <string>10#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit10"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton10">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton10">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_54">
+             <item>
+              <widget class="QLabel" name="label_52">
+               <property name="text">
+                <string>11#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit11"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_124">
+               <property name="text">
+                <string>11#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit11"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton11">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton11">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_48">
+             <item>
+              <widget class="QLabel" name="label_53">
+               <property name="text">
+                <string>12#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit12"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_125">
+               <property name="text">
+                <string>12#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit12"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton12">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton12">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_53">
+             <item>
+              <widget class="QLabel" name="label_54">
+               <property name="text">
+                <string>13#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit13"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_126">
+               <property name="text">
+                <string>13#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit13"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton13">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton13">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_44">
+             <item>
+              <widget class="QLabel" name="label_44">
+               <property name="text">
+                <string>14#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit14"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_127">
+               <property name="text">
+                <string>14#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit14"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton14">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton14">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_41">
+             <item>
+              <widget class="QLabel" name="label_45">
+               <property name="text">
+                <string>15#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit15"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_128">
+               <property name="text">
+                <string>15#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit15"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton15">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton15">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_47">
+             <item>
+              <widget class="QLabel" name="label_55">
+               <property name="text">
+                <string>16#新K值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newkEdit16"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_129">
+               <property name="text">
+                <string>16#新B值：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="newbEdit16"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="calButton16">
+               <property name="text">
+                <string>计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="setButton16">
+               <property name="text">
+                <string>设置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>报表保存目录</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="locateEdit"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="text">
+                <string>选择目录</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>zdButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotTypeChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>calButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotCalKB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>547</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>setButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotSetKB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>577</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>read1Button</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotReadInfo1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>615</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>471</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>read2Button</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotReadInfo2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>615</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>get1Button</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotChange1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>get2Button</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotChange2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>294</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>get3Button</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotChange3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>323</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>typeBox</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotTypeChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>22</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chargeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotTypeChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>V5Button</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotTypeChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>V12Button</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotTypeChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>88</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>supplyButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotTypeChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>48</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>preChargeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotTypeChange()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotSaveExcel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>549</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotSaveData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>351</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotSetDIr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>611</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>634</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckKBDialog</receiver>
+   <slot>slotOpenDO()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>638</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotTypeChange()</slot>
+  <slot>slotReadKB()</slot>
+  <slot>slotCalKB()</slot>
+  <slot>slotSetKB()</slot>
+  <slot>slotReadInfo1()</slot>
+  <slot>slotReadInfo2()</slot>
+  <slot>slotSaveData()</slot>
+  <slot>slotSaveExcel()</slot>
+  <slot>slotSetDIr()</slot>
+  <slot>slotChange1()</slot>
+  <slot>slotChange2()</slot>
+  <slot>slotChange3()</slot>
+  <slot>slotOpenDO()</slot>
+ </slots>
+</ui>

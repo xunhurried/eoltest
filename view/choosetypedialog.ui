@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chooseTypeDialog</class>
+ <widget class="QDialog" name="chooseTypeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>298</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>请选择工作模式</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>MES版</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="text">
+        <string>本地版</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>机台1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>机台2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>机台3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_3">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>机台4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_4">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>机台5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_5">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>机台6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_6">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>机台7</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_7">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>机台8</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_8">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_11">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>机台9</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_9">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_12">
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>机台10</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_10">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_13">
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>机台11</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_11">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_14">
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>机台12</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_12">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_15">
+     <item>
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>机台13</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_13">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_16">
+     <item>
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>机台14</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_14">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_17">
+     <item>
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>机台15</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_15">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_18">
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>机台16</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_16">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>F133-L-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-ZC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-4.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-6.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>A133-5.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-F-S-6.1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-XY1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-7.0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-ZC1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H133-L-S-SD1-6.2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F133-L-S-ZH1-5.3</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>chooseTypeDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>chooseTypeDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotButtonChecked()</slot>
+ </slots>
+</ui>
